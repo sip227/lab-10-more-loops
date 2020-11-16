@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    	var userstring = prompt("Gimme a number that is greater than 100...");
+        var usernum = parseInt(userstring, 10);
+        
+        while (usernum < 100) {// statement for when termination is NOT true
+        	// "While usernum is less than 100..."
+        	console.log(usernum + " is less than 100. Please try again.");
+        	var userstring = prompt(usernum + " is less than 100. Please try again.");
+        	var usernum = parseInt(userstring, 10);
+        }
+		console.log("Congratulations!" + usernum + " is greater than 100! Great Job!");
+
+    </script>
+</body>
+
+</html>
