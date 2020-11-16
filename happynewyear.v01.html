@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <script type="text/javascript">
+	function countDown(start) {
+		console.log(start);
+		let nextNumber = start - 1;
+		
+		if (nextNumber > 0) {
+			countDown(nextNumber); //Recursive Function calls themselves (function call)
+		} else {
+			console.log("HAPPY NEW YEAR!"); //This is the Base Case		
+		}
+		
+	}
+	
+	countDown(10);
+    </script>
+</body>
+
+</html>
